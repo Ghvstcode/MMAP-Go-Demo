@@ -1,7 +1,5 @@
 package main
 
-import "golang.org/x/exp/mmap"
-
 func main() {
 	//// Memory Mapping using syscalls
 	//
@@ -48,6 +46,4 @@ func main() {
 	//
 	//// This will panic because we've trashed the mapping in the baove step with Munmap
 	////fmt.Println(string(b[50:]))
-
-	mmap.Open()
 }
